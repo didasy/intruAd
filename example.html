@@ -1,0 +1,29 @@
+<html>
+<head>
+<style>
+.intrusive-ad {
+  display : none;
+  min-width : 100px;
+  min-height : 100px;
+  background-color: red;
+}
+</style>
+</head>
+<body>
+  <div class="intrusive-ad">
+    <img src="http://placehold.it/200/200">
+  </div>
+  <a href="http://google.com">Google</a>
+  <a href="http://ipgue.com">Ipgue</a>
+  <button>We kill nao</button>
+  <input type="submit" value="submit">
+  <input type="button" value="click">
+  <p data-ad="no-ad">
+    Put your cursor over this sentence and no ad would appear!
+  </p>
+<script src="intruad.js"></script>
+<script>
+intruAd.interval(1000).adShowAfter(10000).track();
+</script>
+</body>
+</html>
